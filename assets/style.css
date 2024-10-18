@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.stButton {
+    display: block;
+    width: 100%;   
+    padding: 10px; 
+    margin: 5px 0; 
+    /* background-color: #007bff; */
+    color: white;  
+    border: none;  
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.st-emotion-cache-lpgk4i{
+    width: 100%;
+}
+
+.stButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+.stButton:active {
+    background-color: #004494;
+}
+
