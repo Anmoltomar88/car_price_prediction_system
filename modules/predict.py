@@ -1,8 +1,11 @@
 import streamlit as st
 import pandas as pd
 import pickle as pk
+import os
 
-model = pk.load(open('model.pkl', 'rb'))
+model_path = os.path.join(os.path.dirname(__file__), 'model.pkl')
+with open(model_path, 'rb') as file:
+    model = pk.load(file)
 cars_data = pd.read_csv('Cardetails.csv')
 
 def get_brand_name(car_name):
